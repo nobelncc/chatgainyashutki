@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { auth, signOut } from "@/app/lib/auth";
-import { redirect } from "next/navigation";
 
 const NAV_ITEMS = [
   { href: "/admin", label: "Dashboard" },
@@ -18,7 +17,6 @@ export default async function AdminLayout({
 }) {
   const session = await auth();
 
-  // login page doesn't need the sidebar/session check
   return (
     <div className="min-h-screen flex">
       {session && (

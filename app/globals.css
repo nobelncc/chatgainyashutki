@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@theme {
+  --color-brand-gold: #b8860b;
+  --color-brand-gold-dark: #96690a;
+  --color-brand-blue: #1b3a66;
+  --color-brand-blue-dark: #12294a;
+}
